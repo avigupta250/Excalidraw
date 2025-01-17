@@ -1,9 +1,10 @@
 import express from "express";
 import  jwt  from "jsonwebtoken";
 import { middleware } from "./middlewares";
+import {JWT_SECRET } from "@repo/backend-common/config"
 
 const app=express();
-export const JWT_SECRET="123"
+
 app.get("/",(req,res)=>{
 res.send("Hii there")
 })
